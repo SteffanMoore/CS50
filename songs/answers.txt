@@ -1,0 +1,21 @@
+The listener's aura best fits into the
+"Purple" category. The valence is average
+while both the energy and danceability are
+above average implying a more "passionate"
+listener.
+
+This is not a particularly suitable way of
+finding a musical aura due to the averages
+made - for example the listener might fit
+into two very distinct auras, one where they
+listen to very low valence music and one
+very high valence but, because this is
+averaged, this isn't reflected in the
+results.
+
+One better way to find auras would be to
+group songs together based on a listening
+session so as not to average distinct music
+auras. Another way to see whether the
+listener varies from extreme to extreme
+would be to take a root mean square value.

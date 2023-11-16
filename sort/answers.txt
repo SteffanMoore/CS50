@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: The random and reversed tests look a long time but the sorted tests took significantly less time.
+
+sort2 uses: merge sort
+
+How do you know?: consistently quicker than both other sort types for all tests.
+
+sort3 uses: selection sort
+
+How do you know?: It consistently took longer and sorted/unsorted lists took the same time to sort.
