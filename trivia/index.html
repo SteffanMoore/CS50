@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // selects answer buttons
+                let correct = document.querySelector('.correct');
+                let incorrect = document.querySelectorAll('.incorrect');
+
+                // acts when the correct button is clicked
+                correct.addEventListener('click', function()
+                {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#answer_text').innerHTML = "Correct!";
+                });
+
+                // acts when an incorrect button is clicked
+                for (let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener('click', function()
+                    {
+                        incorrect[i].style.backgroundColor = 'red';
+                        document.querySelector('#answer_text').innerHTML = "Incorrect.";
+                    });
+                }
+
+                let attempt = document.querySelector('input');
+                document.querySelector('#check').addEventListener('click', function() {
+                    if (attempt.value.localeCompare("Augustus") == 0)
+                    {
+                        document.querySelector('#answer_text_2').innerHTML = "Correct!";
+                        attempt.style.backgroundColor = 'green';
+                    }
+                    else
+                    {
+                        document.querySelector('#answer_text_2').innerHTML = "Incorrect.";
+                        attempt.style.backgroundColor = 'red';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                    <h3>Before the construction of the Eiffel Tower in 1889, what was the tallest manmade structure? </h3>
+                    <button class="correct">The Great Pyramid</button>
+                    <button class="incorrect">The Crysler Building</button>
+                    <button class="incorrect">The Colossus of Rhodes</button>
+                    <p id="answer_text"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                    <h3>What was the name of the first Roman Emperor?</h3>
+                    <input type="text" placeholder="Answer">
+                    <button id="check">Check</button>
+                    <p id="answer_text_2"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>
